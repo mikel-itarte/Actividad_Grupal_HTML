@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Tienda online de muebles modernos y elegantes" />
+    <meta name="author" content="" />
+    <title>Muebles con Estilo - Salón</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Iconos de Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Tema CSS principal (incluye Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        .product-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navegación-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand fw-bold" href="#!">
+                <i class="bi bi-house-door-fill me-2"></i>Muebles con Estilo
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Alternar navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#!" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Categorías</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Salon.html">Salón</a></li>
+                            <li><a class="dropdown-item" href="#!">Dormitorio</a></li>
+                            <li><a class="dropdown-item" href="#!">Cocina</a></li>
+                            <li><a class="dropdown-item" href="#!">Oficina</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#!">Más vendidos</a></li>
+                            <li><a class="dropdown-item" href="#!">Nuevas colecciones</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Ofertas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Contacto</a></li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-outline-dark" type="submit">
+                        <i class="bi-cart-fill me-1"></i>
+                        Carrito
+                        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado-->
+    <header class="bg-dark py-5"
+        style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1618220179428-22790b461013?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center;">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bolder">Muebles que inspiran</h1>
+                <p class="lead fw-normal text-white-50 mb-0">Diseño moderno y calidad para tu hogar</p>
+            </div>
+        </div>
+    </header>
+    <!-- Sección de categorías -->
+    <section class="py-5 bg-light">
+        <div class="container px-4 px-lg-5">
+            <h2 class="text-center mb-5">Muebles de Salón</h2>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card bg-dark text-white border-0">
+                        <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="card-img" alt="Salón">
+                        <div class="card-img-overlay d-flex align-items-center justify-content-center"
+                            style="background-color: rgba(0,0,0,0.3);">
+                            <h5 class="card-title fw-bold">Rústico</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card bg-dark text-white border-0">
+                        <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="card-img" alt="Dormitorio">
+                        <div class="card-img-overlay d-flex align-items-center justify-content-center"
+                            style="background-color: rgba(0,0,0,0.3);">
+                            <h5 class="card-title fw-bold">Industrial</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card bg-dark text-white border-0">
+                        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="card-img" alt="Cocina">
+                        <div class="card-img-overlay d-flex align-items-center justify-content-center"
+                            style="background-color: rgba(0,0,0,0.3);">
+                            <h5 class="card-title fw-bold">Nórdico</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card bg-dark text-white border-0">
+                        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="card-img" alt="Oficina">
+                        <div class="card-img-overlay d-flex align-items-center justify-content-center"
+                            style="background-color: rgba(0,0,0,0.3);">
+                            <h5 class="card-title fw-bold">Moderno</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-white mb-3">Muebles con Estilo</h5>
+                    <p class="text-white-50 small">Tu tienda online de muebles modernos y de calidad para todos los
+                        espacios de tu hogar.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-white mb-3">Enlaces rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#!" class="text-white-50 text-decoration-none">Sobre nosotros</a></li>
+                        <li><a href="#!" class="text-white-50 text-decoration-none">Política de envíos</a></li>
+                        <li><a href="#!" class="text-white-50 text-decoration-none">Devoluciones</a></li>
+                        <li><a href="#!" class="text-white-50 text-decoration-none">Preguntas frecuentes</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-white mb-3">Síguenos</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#!" class="text-white-50"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#!" class="text-white-50"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#!" class="text-white-50"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#!" class="text-white-50"><i class="bi bi-pinterest fs-4"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 bg-white">
+            <p class="m-0 text-center text-white-50">Copyright &copy; Muebles con Estilo 2024. Todos los derechos
+                reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Tema JS principal -->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
+<!-- ##paginas por crear subpaginas##
+##-estanteria.html (página del producto)
+
+-categoria-salon.html
+
+-contacto.html
+
+-carrito.html##-->
