@@ -10823,9 +10823,9 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
-
-  /* Estilo Contacto*/
 }
+
+/* Estilo Contacto*/
 .pagina-contacto .contact-section{
     padding:60px 20px;
     max-width:1200px;
