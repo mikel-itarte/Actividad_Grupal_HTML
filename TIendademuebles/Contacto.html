@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                <title>Contacto</title>
+
+                <link rel="stylesheet" href="contacto.css">
+
+        </head>
+                <body class="pagina-contacto">
+
+                    <section class="contact-section">
+
+                            <div class="contact-title">
+                            <h1>Contacto</h1>
+                            <p>¿Tienes alguna pregunta? Escríbenos y te responderemos lo antes posible.</p>
+                            </div>
+
+                            <div class="contact-container">
+
+                            <!-- INFORMACIÓN -->
+                            <div class="contact-info">
+
+                            <h3>Información de contacto</h3>
+
+                            <div class="contact-item">
+                            <strong>Dirección:</strong><br>
+                            Calle Bravo Murillo 5<br>
+                            Madrid, España
+                            </div>
+
+                            <div class="contact-item">
+                            <strong>Teléfono:</strong><br>
+                            +34 635 420 125
+                            </div>
+
+                            <div class="contact-item">
+                            <strong>Email:</strong><br>
+                            mundo_mueble@gmail.com
+                            </div>
+
+                            <div class="contact-item">
+                            <strong>Horario:</strong><br>
+                            Lunes - Viernes<br>
+                            09:00 - 13:00
+                            16:00 - 20:00
+                            </div>
+
+                            </div> 
+
+                            <!-- FORMULARIO -->
+                            <div class="contact-form">
+
+                            <h3>Envíanos un mensaje</h3>
+
+                            <form action="enviar.php" method="POST">
+
+                            <input type="text" name="nombre" placeholder="Nombre completo" required>
+
+                            <input type="email" name="email" placeholder="Correo electrónico" required>
+
+                            <input type="tel" name="telefono" placeholder="Teléfono">
+
+                            <select name="asunto">
+                            <option value="">Selecciona un asunto</option>
+                            <option value="consulta">Consulta</option>
+                            <option value="soporte">Soporte</option>
+                            <option value="presupuesto">Solicitar presupuesto</option>
+                            <option value="otro">Otro</option>
+                            </select>
+
+                            <textarea name="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+
+                            <label class="checkbox">
+                            <input type="checkbox" required>
+                            Acepto la política de privacidad
+                            </label>
+
+                            <button type="submit">Enviar mensaje</button>
+
+                            </form>
+
+                            </div>
+
+                            </div>
+
+                            <div class="map">
+                            <iframe src="https://www.google.com/maps/place/C.+de+Bravo+Murillo,+25,+Chamber%C3%AD,+28015+Madrid/@40.4359427,-3.7045207,17z/data=!3m1!4b1!4m6!3m5!1s0xd42285f09659261:0xf46cd1a64ae9fbad!8m2!3d40.4359427!4d-3.7045207!16s%2Fg%2F11rgfxyx3l?entry=ttu&g_ep=EgoyMDI2MDMwMy4wIKXMDSoASAFQAw%3D%3D"></iframe>
+                            </div>
+
+                    </section>
+
+                </body>
+    </html>
