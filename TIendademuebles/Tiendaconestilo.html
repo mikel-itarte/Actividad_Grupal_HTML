@@ -17,11 +17,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <style>
         /* ===== ESTILOS PERSONALIZADOS ===== */
+        /* Ajuste para navbar fijo */
+        body {
+            padding-top: 76px; /* Altura del navbar fijo */
+        }
+        
         /* Animación para tarjetas de productos */
         .product-card {
             transition: all 0.3s ease;
             border: none;
             overflow: hidden;
+            height: 100%;
         }
         .product-card:hover {
             transform: translateY(-8px);
@@ -29,6 +35,8 @@
         }
         .product-card img {
             transition: transform 0.5s ease;
+            height: 200px;
+            object-fit: cover;
         }
         .product-card:hover img {
             transform: scale(1.05);
@@ -40,7 +48,9 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            min-height: 450px;
+            min-height: 600px;
+            height: 100vh;
+            max-height: 700px;
             position: relative;
             overflow: hidden;
         }
@@ -57,10 +67,28 @@
         .parallax .container {
             position: relative;
             z-index: 2;
+            height: 100%;
         }
+        
+        /* Texto semitransparente */
+        .text-white-75 {
+            color: rgba(255, 255, 255, 0.75);
+        }
+        
+        /* Efecto hover para el botón */
+        .hover-scale:hover {
+            transform: scale(1.05);
+            background-color: rgba(255, 255, 255, 0.1) !important;
+            border-color: white !important;
+        }
+        
         @media (max-width: 768px) {
             .parallax {
                 background-attachment: scroll;
+                min-height: 500px;
+            }
+            .display-3 {
+                font-size: 2.5rem;
             }
         }
         
@@ -111,11 +139,24 @@
             color: black !important;
             transform: scale(1.05);
         }
+        
+        /* Ajustes para las cards de productos */
+        .card-footer {
+            background-color: transparent;
+            border-top: none;
+        }
+        .btn-outline-dark {
+            border-width: 2px;
+        }
+        .badge {
+            font-size: 0.8rem;
+            padding: 0.5rem 0.8rem;
+        }
     </style>
 </head>
 
 <body>
-    <!-- Navegación-->
+    <!-- Navegación con fixed-top -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container px-4 px-lg-5">
             <a class="navbar-brand fw-bold" href="Tiendaconestilo.html">
@@ -153,13 +194,36 @@
         </div>
     </nav>
 
-    <!-- HEADER CON EFECTO PARALLAX (MEJORADO) -->
-    <header class="parallax" style="background-image: url('https://images.unsplash.com/photo-1618220179428-22790b461013?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
-        <div class="container px-4 px-lg-5 h-100 d-flex align-items-center">
-            <div class="text-center text-white w-100">
-                <h1 class="display-3 fw-bolder animate__animated animate__fadeInDown mb-4">Muebles que inspiran</h1>
-                <p class="lead fw-normal animate__animated animate__fadeInUp animate__delay-1s">Diseño moderno y calidad para tu hogar</p>
-                <a href="#productos" class="btn btn-outline-light btn-lg mt-4 animate__animated animate__fadeInUp animate__delay-2s">Descubrir colección</a>
+    <!-- HEADER CON EFECTO PARALLAX Y CENTRADO VERTICAL -->
+    <header class="parallax position-relative" style="background-image: url('https://images.unsplash.com/photo-1618220179428-22790b461013?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+        <!-- Overlay -->
+        <div class="position-absolute top-0 start-0 w-100 h-100" 
+             style="background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.3) 100%); z-index: 1;">
+        </div>
+        
+        <div class="container px-4 px-lg-5 h-100 position-relative" style="z-index: 2;">
+            <div class="row h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 col-xl-7">
+                    <!-- Título -->
+                    <h1 class="display-3 fw-bolder text-white mb-4 animate__animated animate__fadeInDown" 
+                        style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+                        Muebles que <span class="border-bottom border-warning border-3 pb-2">inspiran</span>
+                    </h1>
+                    
+                    <!-- Descripción -->
+                    <p class="lead fw-normal text-white-75 mb-5 animate__animated animate__fadeInUp animate__delay-1s">
+                        <i class="bi bi-quote me-2 opacity-50"></i>
+                        Diseño moderno y calidad para tu hogar
+                        <i class="bi bi-quote ms-2 opacity-50"></i>
+                    </p>
+                    
+                    <!-- Botón -->
+                    <a href="#productos" 
+                       class="btn btn-outline-light btn-lg px-5 py-3 fw-semibold border-2 rounded-pill animate__animated animate__fadeInUp animate__delay-2s hover-scale">
+                        <i class="bi bi-arrow-right-circle me-2"></i>
+                        Descubrir colección
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -169,7 +233,7 @@
         <div class="container px-4 px-lg-5 mt-5">
             <h2 class="text-center mb-5 display-5 fw-bold">Nuestros productos destacados</h2>
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-
+                
                 <!-- Producto 1 - Sofá moderno -->
                 <div class="col mb-5">
                     <div class="card h-100 product-card">
@@ -361,7 +425,7 @@
         </div>
     </section>
 
-    <!-- NUEVA SECCIÓN: TABLA COMPARATIVA DE MATERIALES -->
+    <!-- SECCIÓN: TABLA COMPARATIVA DE MATERIALES -->
     <section class="py-5 bg-light">
         <div class="container px-4 px-lg-5">
             <h3 class="text-center mb-4 display-6 fw-bold">Comparativa de materiales</h3>
@@ -512,28 +576,70 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     
-    <!-- Script del Carrito -->
-    <script>
-        // Función para añadir productos al carrito
-        function addToCart(nombre, precio, imagen, descripcion = '') {
-            let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-            const existingItem = carrito.find(item => item.nombre === nombre);
-            
-            if (existingItem) {
-                existingItem.cantidad += 1;
-            } else {
-                carrito.push({
-                    nombre: nombre,
-                    precio: precio,
-                    imagen: imagen,
-                    descripcion: descripcion,
-                    cantidad: 1
-                });
-            }
-            
-            localStorage.setItem('carrito', JSON.stringify(carrito));
-            actualizarContadorGlobal();
-            
+<script>
+    // Función para añadir productos al carrito
+    function addToCart(nombre, precio, imagen, descripcion = '') {
+        let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+        const existingItem = carrito.find(item => item.nombre === nombre);
+        
+        if (existingItem) {
+            existingItem.cantidad += 1;
+        } else {
+            carrito.push({
+                nombre: nombre,
+                precio: precio,
+                imagen: imagen,
+                descripcion: descripcion,
+                cantidad: 1
+            });
+        }
+        
+        localStorage.setItem('carrito', JSON.stringify(carrito));
+        actualizarContadorGlobal();
+        
+        // Notificación elegante
+        const toast = document.createElement('div');
+        toast.className = 'position-fixed bottom-0 end-0 p-3';
+        toast.style.zIndex = '9999';
+        toast.innerHTML = `
+            <div class="toast show align-items-center text-white bg-success border-0" role="alert">
+                <div class="d-flex">
+                    <div class="toast-body">
+                        ✅ ${nombre} añadido al carrito
+                    </div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(toast);
+        setTimeout(() => toast.remove(), 3000);
+    }
+
+    // Función para actualizar el contador del carrito
+    function actualizarContadorGlobal() {
+        const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+        const total = carrito.reduce((sum, item) => sum + item.cantidad, 0);
+        const contadores = document.querySelectorAll('#cart-count');
+        contadores.forEach(el => {
+            el.textContent = total;
+        });
+    }
+
+    // Inicializar contador al cargar la página
+    document.addEventListener('DOMContentLoaded', function() {
+        actualizarContadorGlobal();
+        
+        // Verificar que el localStorage funciona
+        console.log('Carrito iniciado correctamente');
+    });
+
+    // Función de depuración para ver el contenido del carrito (opcional)
+    function verCarrito() {
+        const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+        console.log('Contenido del carrito:', carrito);
+        alert('El carrito tiene ' + carrito.reduce((sum, item) => sum + item.cantidad, 0) + ' productos');
+    }
+</script>
             // Notificación elegante
             const toast = document.createElement('div');
             toast.className = 'position-fixed bottom-0 end-0 p-3';
@@ -546,27 +652,3 @@
                         </div>
                         <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
                     </div>
-                </div>
-            `;
-            document.body.appendChild(toast);
-            setTimeout(() => toast.remove(), 3000);
-        }
-
-        function actualizarContadorGlobal() {
-            const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-            const total = carrito.reduce((sum, item) => sum + item.cantidad, 0);
-            const contadores = document.querySelectorAll('#cart-count');
-            contadores.forEach(el => {
-                el.textContent = total;
-            });
-        }
-
-        document.addEventListener('DOMContentLoaded', function() {
-            actualizarContadorGlobal();
-        });
-    </script>
-    <!-- Tema JS principal -->
-    <script src="js/scripts.js"></script>
-</body>
-
-</html>
