@@ -51,11 +51,11 @@
                     <li class="nav-item"><a class="nav-link" href="Ofertas.html">Ofertas</a></li>
                     <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
                 </ul>
-                <form class="d-flex">
+                <form class="d-flex" action="carrito.html" method="get">
                     <button class="btn btn-outline-dark" type="submit">
                         <i class="bi-cart-fill me-1"></i>
                         Carrito
-                        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        <span class="badge bg-dark text-white ms-1 rounded-pill" id="cart-count">0</span>
                     </button>
                 </form>
             </div>
@@ -94,8 +94,12 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al
-                                    carrito</a></div>
+                            <div class="text-center">
+                                <button class="btn btn-outline-dark mt-auto w-100"
+                                    onclick="addToCart('Cocina Tarraco', 1899.99, 'assets/cocina-completa-fabricada-en-tablero-laminado-compuesta-por-siete-muebles-de-color-gris-mate-mango-tarraco.webp')">
+                                    <i class="bi bi-cart-plus me-2"></i>Añadir
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -113,8 +117,12 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al
-                                    carrito</a></div>
+                            <div class="text-center">
+                                <button class="btn btn-outline-dark mt-auto w-100"
+                                    onclick="addToCart('Mueble Microondas', 309.99, 'assets/mueble-alto-microondas.jpg')">
+                                    <i class="bi bi-cart-plus me-2"></i>Añadir
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -133,8 +141,12 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al
-                                    carrito</a></div>
+                            <div class="text-center">
+                                <button class="btn btn-outline-dark mt-auto w-100"
+                                    onclick="addToCart('Cocina Completa de 210 cm', 2499.99, 'assets/conjunto-muebles-de-cocina-livia-trend-line-blanco-madera-210-cm.jpg')">
+                                    <i class="bi bi-cart-plus me-2"></i>Añadir
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -151,8 +163,12 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al
-                                    carrito</a></div>
+                            <div class="text-center">
+                                <button class="btn btn-outline-dark mt-auto w-100"
+                                    onclick="addToCart('Mesa de Cocina Extensible', 357.99, 'assets/MESA-LUA-4.jpg')">
+                                    <i class="bi bi-cart-plus me-2"></i>Añadir
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -169,8 +185,12 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al
-                                    carrito</a></div>
+                            <div class="text-center">
+                                <button class="btn btn-outline-dark mt-auto w-100"
+                                    onclick="addToCart('Conjunto mesa de cocina', 499.99, 'assets/Mesa-de-Cocina-.jpg')">
+                                    <i class="bi bi-cart-plus me-2"></i>Añadir
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -188,8 +208,12 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al
-                                    carrito</a></div>
+                            <div class="text-center">
+                                <button class="btn btn-outline-dark mt-auto w-100"
+                                    onclick="addToCart('Fregadero inteligente', 719.99, 'assets/fregadero.webp')">
+                                    <i class="bi bi-cart-plus me-2"></i>Añadir
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -197,7 +221,8 @@
                 <!-- Producto 7 - Carrito de cocina -->
                 <div class="col mb-5">
                     <div class="card h-100 product-card">
-                        <div class="badge bg-success text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Nuevo
+                        <div class="badge bg-success text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                            Nuevo
                         </div>
                         <img class="card-img-top" src="assets\carrito.webp" alt="Carrito de cocina" />
                         <div class="card-body p-4">
@@ -209,8 +234,12 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al
-                                    carrito</a></div>
+                            <div class="text-center">
+                                <button class="btn btn-outline-dark mt-auto w-100"
+                                    onclick="addToCart('Carrito de servicio', 63.99, 'assets/carrito.webp')">
+                                    <i class="bi bi-cart-plus me-2"></i>Añadir
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -218,9 +247,7 @@
                 <!-- Producto 8 - Taburetes -->
                 <div class="col mb-5">
                     <div class="card h-100 product-card">
-                        <img class="card-img-top"
-                            src="assets\taburetes.webp"
-                            alt="Taburetes de Cocina" />
+                        <img class="card-img-top" src="assets\taburetes.webp" alt="Taburetes de Cocina" />
                         <div class="card-body p-4">
                             <div class="text-center">
                                 <h5 class="fw-bolder">Juego de 2 Taburetes de Bar para Cocina</h5>
@@ -229,13 +256,15 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al
-                                    carrito</a></div>
+                            <div class="text-center">
+                                <button class="btn btn-outline-dark mt-auto w-100"
+                                    onclick="addToCart('Taburetes de Bar para Cocina', 79.90, 'assets/taburetes.webp')">
+                                    <i class="bi bi-cart-plus me-2"></i>Añadir
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
     </section>
     <!-- Pie de página-->
     <footer class="py-5 bg-dark">
@@ -276,5 +305,81 @@
     <!-- Tema JS principal -->
     <script src="js/scripts.js"></script>
 </body>
+<script>
+    // Función para añadir productos al carrito
+    function addToCart(nombre, precio, imagen, descripcion = '') {
+        let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+        const existingItem = carrito.find(item => item.nombre === nombre);
+
+        if (existingItem) {
+            existingItem.cantidad += 1;
+        } else {
+            carrito.push({
+                nombre: nombre,
+                precio: precio,
+                imagen: imagen,
+                descripcion: descripcion,
+                cantidad: 1
+            });
+        }
+
+        localStorage.setItem('carrito', JSON.stringify(carrito));
+        actualizarContadorGlobal();
+
+        // Notificación elegante
+        const toast = document.createElement('div');
+        toast.className = 'position-fixed bottom-0 end-0 p-3';
+        toast.style.zIndex = '9999';
+        toast.innerHTML = `
+            <div class="toast show align-items-center text-white bg-success border-0" role="alert">
+                <div class="d-flex">
+                    <div class="toast-body">
+                        ✅ ${nombre} añadido al carrito
+                    </div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(toast);
+        setTimeout(() => toast.remove(), 3000);
+    }
+
+    // Función para actualizar el contador del carrito
+    function actualizarContadorGlobal() {
+        const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+        const total = carrito.reduce((sum, item) => sum + item.cantidad, 0);
+        const contadores = document.querySelectorAll('#cart-count');
+        contadores.forEach(el => {
+            el.textContent = total;
+        });
+    }
+
+    // Inicializar contador al cargar la página
+    document.addEventListener('DOMContentLoaded', function () {
+        actualizarContadorGlobal();
+
+        // Verificar que el localStorage funciona
+        console.log('Carrito iniciado correctamente');
+    });
+
+    // Función de depuración para ver el contenido del carrito (opcional)
+    function verCarrito() {
+        const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+        console.log('Contenido del carrito:', carrito);
+        alert('El carrito tiene ' + carrito.reduce((sum, item) => sum + item.cantidad, 0) + ' productos');
+    }
+</script>
+// Notificación elegante
+const toast = document.createElement('div');
+toast.className = 'position-fixed bottom-0 end-0 p-3';
+toast.style.zIndex = '9999';
+toast.innerHTML = `
+<div class="toast show align-items-center text-white bg-success border-0" role="alert">
+    <div class="d-flex">
+        <div class="toast-body">
+            ✅ ${nombre} añadido al carrito
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+    </div>
 
 </html>

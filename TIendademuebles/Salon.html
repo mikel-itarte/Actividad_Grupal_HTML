@@ -51,11 +51,11 @@
                     <li class="nav-item"><a class="nav-link" href="Ofertas.html">Ofertas</a></li>
                     <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
                 </ul>
-                <form class="d-flex">
+                <form class="d-flex" action="carrito.html" method="get">
                     <button class="btn btn-outline-dark" type="submit">
                         <i class="bi-cart-fill me-1"></i>
                         Carrito
-                        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        <span class="badge bg-dark text-white ms-1 rounded-pill" id="cart-count">0</span>
                     </button>
                 </form>
             </div>
@@ -93,8 +93,12 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al
-                                    carrito</a></div>
+                            <div class="text-center">
+                                <button class="btn btn-outline-dark mt-auto w-100"
+                                    onclick="addToCart('Sofá Moderno Nórdico', 899.99, 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80')">
+                                    <i class="bi bi-cart-plus me-2"></i>Añadir
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -113,8 +117,12 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al
-                                    carrito</a></div>
+                            <div class="text-center">
+                                <button class="btn btn-outline-dark mt-auto w-100"
+                                    onclick="addToCart('Mesa de Comedor Roble', 509.99, 'https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80')">
+                                    <i class="bi bi-cart-plus me-2"></i>Añadir
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -131,12 +139,15 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al
-                                    carrito</a></div>
+                            <div class="text-center">
+                                <button class="btn btn-outline-dark mt-auto w-100"
+                                    onclick="addToCart('Silla Salón Roble', 249.99, 'assets/sillacomedor.jpg')">
+                                    <i class="bi bi-cart-plus me-2"></i>Añadir
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-
                 <!-- Producto 4 - Estantería -->
                 <div class="col mb-5">
                     <div class="card h-100 product-card">
@@ -149,8 +160,12 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al
-                                    carrito</a></div>
+                            <div class="text-center">
+                                <button class="btn btn-outline-dark mt-auto w-100"
+                                    onclick="addToCart('Estantería Multiusos', 179.99, 'assets/est_pino.jpg')">
+                                    <i class="bi bi-cart-plus me-2"></i>Añadir
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -168,8 +183,12 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al
-                                    carrito</a></div>
+                            <div class="text-center">
+                                <button class="btn btn-outline-dark mt-auto w-100"
+                                    onclick="addToCart('Cajonera de madera', 199.99, 'assets/mueble de comedor-2puertas-2cajones.jpg')">
+                                    <i class="bi bi-cart-plus me-2"></i>Añadir
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -188,8 +207,12 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al
-                                    carrito</a></div>
+                            <div class="text-center">
+                                <button class="btn btn-outline-dark mt-auto w-100"
+                                    onclick="addToCart('Mesa de Centro', 189.99, 'https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?ixlib=rb-4.0.3&auto=format&fit=crop&w=450&q=80')">
+                                    <i class="bi bi-cart-plus me-2"></i>Añadir
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -206,8 +229,12 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al
-                                    carrito</a></div>
+                            <div class="text-center">
+                                <button class="btn btn-outline-dark mt-auto w-100"
+                                    onclick="addToCart('Lámpara de Pie de Salón', 349.99, 'assets/lampara-pie-de-salon.jpg')">
+                                    <i class="bi bi-cart-plus me-2"></i>Añadir
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -224,13 +251,15 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al
-                                    carrito</a></div>
+                            <div class="text-center">
+                                <button class="btn btn-outline-dark mt-auto w-100"
+                                    onclick="addToCart('Mueble para TV', 179.99, 'assets/muebletv.webp')">
+                                    <i class="bi bi-cart-plus me-2"></i>Añadir
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
     </section>
     <!-- Pie de página-->
     <footer class="py-5 bg-dark">
@@ -271,5 +300,81 @@
     <!-- Tema JS principal -->
     <script src="js/scripts.js"></script>
 </body>
+<script>
+    // Función para añadir productos al carrito
+    function addToCart(nombre, precio, imagen, descripcion = '') {
+        let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+        const existingItem = carrito.find(item => item.nombre === nombre);
+
+        if (existingItem) {
+            existingItem.cantidad += 1;
+        } else {
+            carrito.push({
+                nombre: nombre,
+                precio: precio,
+                imagen: imagen,
+                descripcion: descripcion,
+                cantidad: 1
+            });
+        }
+
+        localStorage.setItem('carrito', JSON.stringify(carrito));
+        actualizarContadorGlobal();
+
+        // Notificación elegante
+        const toast = document.createElement('div');
+        toast.className = 'position-fixed bottom-0 end-0 p-3';
+        toast.style.zIndex = '9999';
+        toast.innerHTML = `
+            <div class="toast show align-items-center text-white bg-success border-0" role="alert">
+                <div class="d-flex">
+                    <div class="toast-body">
+                        ✅ ${nombre} añadido al carrito
+                    </div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(toast);
+        setTimeout(() => toast.remove(), 3000);
+    }
+
+    // Función para actualizar el contador del carrito
+    function actualizarContadorGlobal() {
+        const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+        const total = carrito.reduce((sum, item) => sum + item.cantidad, 0);
+        const contadores = document.querySelectorAll('#cart-count');
+        contadores.forEach(el => {
+            el.textContent = total;
+        });
+    }
+
+    // Inicializar contador al cargar la página
+    document.addEventListener('DOMContentLoaded', function () {
+        actualizarContadorGlobal();
+
+        // Verificar que el localStorage funciona
+        console.log('Carrito iniciado correctamente');
+    });
+
+    // Función de depuración para ver el contenido del carrito (opcional)
+    function verCarrito() {
+        const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+        console.log('Contenido del carrito:', carrito);
+        alert('El carrito tiene ' + carrito.reduce((sum, item) => sum + item.cantidad, 0) + ' productos');
+    }
+</script>
+// Notificación elegante
+const toast = document.createElement('div');
+toast.className = 'position-fixed bottom-0 end-0 p-3';
+toast.style.zIndex = '9999';
+toast.innerHTML = `
+<div class="toast show align-items-center text-white bg-success border-0" role="alert">
+    <div class="d-flex">
+        <div class="toast-body">
+            ✅ ${nombre} añadido al carrito
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+    </div>
 
 </html>

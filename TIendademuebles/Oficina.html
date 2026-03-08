@@ -51,11 +51,11 @@
                     <li class="nav-item"><a class="nav-link" href="Ofertas.html">Ofertas</a></li>
                     <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
                 </ul>
-                <form class="d-flex">
+                <form class="d-flex" action="carrito.html" method="get">
                     <button class="btn btn-outline-dark" type="submit">
                         <i class="bi-cart-fill me-1"></i>
                         Carrito
-                        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        <span class="badge bg-dark text-white ms-1 rounded-pill" id="cart-count">0</span>
                     </button>
                 </form>
             </div>
@@ -91,8 +91,12 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al
-                                    carrito</a></div>
+                            <div class="text-center">
+                                <button class="btn btn-outline-dark mt-auto w-100"
+                                    onclick="addToCart('Mesa Ordenador de acero reforzado', 999.99, 'assets/escritorio-acero-ref_.jpg')">
+                                    <i class="bi bi-cart-plus me-2"></i>Añadir
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -111,8 +115,12 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al
-                                    carrito</a></div>
+                            <div class="text-center">
+                                <button class="btn btn-outline-dark mt-auto w-100"
+                                    onclick="addToCart('Mesa Gaming Matrix R4', 241.99, 'assets/mesa-gaming-matrix-r4-con-wireless.webp')">
+                                    <i class="bi bi-cart-plus me-2"></i>Añadir
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -129,8 +137,12 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al
-                                    carrito</a></div>
+                            <div class="text-center">
+                                <button class="btn btn-outline-dark mt-auto w-100"
+                                    onclick="addToCart('Mueble archivador', 319.99, 'assets/archivador.webp')">
+                                    <i class="bi bi-cart-plus me-2"></i>Añadir
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -147,8 +159,12 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al
-                                    carrito</a></div>
+                            <div class="text-center">
+                                <button class="btn btn-outline-dark mt-auto w-100"
+                                    onclick="addToCart('Silla Gaming Razer', 279.99, 'assets/silla-gamingjpg.jpg')">
+                                    <i class="bi bi-cart-plus me-2"></i>Añadir
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -165,8 +181,12 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al
-                                    carrito</a></div>
+                            <div class="text-center">
+                                <button class="btn btn-outline-dark mt-auto w-100"
+                                    onclick="addToCart('Silla Ergonómica ROYAL', 479.99, 'assets/silla-ergonomica.webp')">
+                                    <i class="bi bi-cart-plus me-2"></i>Añadir
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -184,8 +204,12 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al
-                                    carrito</a></div>
+                            <div class="text-center">
+                                <button class="btn btn-outline-dark mt-auto w-100"
+                                    onclick="addToCart('Libreria baja oficina', 798.99, 'assets/libreria-baja-con-baldas-madera-para-oficina-rp567-gs.jpg')">
+                                    <i class="bi bi-cart-plus me-2"></i>Añadir
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -193,7 +217,8 @@
                 <!-- Producto 7 - Recibidor -->
                 <div class="col mb-5">
                     <div class="card h-100 product-card">
-                        <div class="badge bg-success text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Nuevo
+                        <div class="badge bg-success text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                            Nuevo
                         </div>
                         <img class="card-img-top" src="assets\recibidor.jpg" alt="Recibidor" />
                         <div class="card-body p-4">
@@ -204,8 +229,12 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al
-                                    carrito</a></div>
+                            <div class="text-center">
+                                <button class="btn btn-outline-dark mt-auto w-100"
+                                    onclick="addToCart('Mueble recibidor', 788.99, 'assets/recibidor.jpg')">
+                                    <i class="bi bi-cart-plus me-2"></i>Añadir
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -222,13 +251,15 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al
-                                    carrito</a></div>
+                            <div class="text-center">
+                                <button class="btn btn-outline-dark mt-auto w-100"
+                                    onclick="addToCart('Mueble MDD Standard', 561.90, 'assets/office-bajo.webp')">
+                                    <i class="bi bi-cart-plus me-2"></i>Añadir
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
     </section>
     <!-- Pie de página-->
     <footer class="py-5 bg-dark">
@@ -269,5 +300,81 @@
     <!-- Tema JS principal -->
     <script src="js/scripts.js"></script>
 </body>
+<script>
+    // Función para añadir productos al carrito
+    function addToCart(nombre, precio, imagen, descripcion = '') {
+        let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+        const existingItem = carrito.find(item => item.nombre === nombre);
+
+        if (existingItem) {
+            existingItem.cantidad += 1;
+        } else {
+            carrito.push({
+                nombre: nombre,
+                precio: precio,
+                imagen: imagen,
+                descripcion: descripcion,
+                cantidad: 1
+            });
+        }
+
+        localStorage.setItem('carrito', JSON.stringify(carrito));
+        actualizarContadorGlobal();
+
+        // Notificación elegante
+        const toast = document.createElement('div');
+        toast.className = 'position-fixed bottom-0 end-0 p-3';
+        toast.style.zIndex = '9999';
+        toast.innerHTML = `
+            <div class="toast show align-items-center text-white bg-success border-0" role="alert">
+                <div class="d-flex">
+                    <div class="toast-body">
+                        ✅ ${nombre} añadido al carrito
+                    </div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(toast);
+        setTimeout(() => toast.remove(), 3000);
+    }
+
+    // Función para actualizar el contador del carrito
+    function actualizarContadorGlobal() {
+        const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+        const total = carrito.reduce((sum, item) => sum + item.cantidad, 0);
+        const contadores = document.querySelectorAll('#cart-count');
+        contadores.forEach(el => {
+            el.textContent = total;
+        });
+    }
+
+    // Inicializar contador al cargar la página
+    document.addEventListener('DOMContentLoaded', function () {
+        actualizarContadorGlobal();
+
+        // Verificar que el localStorage funciona
+        console.log('Carrito iniciado correctamente');
+    });
+
+    // Función de depuración para ver el contenido del carrito (opcional)
+    function verCarrito() {
+        const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+        console.log('Contenido del carrito:', carrito);
+        alert('El carrito tiene ' + carrito.reduce((sum, item) => sum + item.cantidad, 0) + ' productos');
+    }
+</script>
+// Notificación elegante
+const toast = document.createElement('div');
+toast.className = 'position-fixed bottom-0 end-0 p-3';
+toast.style.zIndex = '9999';
+toast.innerHTML = `
+<div class="toast show align-items-center text-white bg-success border-0" role="alert">
+    <div class="d-flex">
+        <div class="toast-body">
+            ✅ ${nombre} añadido al carrito
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+    </div>
 
 </html>
